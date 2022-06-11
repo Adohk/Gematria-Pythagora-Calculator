@@ -1,4 +1,5 @@
 var words = "ADDED TO ALL MINUS NONE SHARED BY EVERYTHING MULTIPLIED IN ABUNDANCE"
+words = words.replace(/[^a-zA-Z ]/g, "").toUpperCase()
 
 var alphabetMap = Array.from("abcdefghijklmnopqrstuvwxyz")
 function getCharGematria(c){
