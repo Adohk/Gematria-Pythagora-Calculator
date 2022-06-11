@@ -85,3 +85,16 @@ function deduceRecurse(total){
 	}
 	return
 }
+
+var result = getWordsGematria(words)
+console.log(result)
+
+var result2 = getWordsPythagora(words)
+console.log(result2)
+
+var result3 = deducePythagora(result2)
+console.log(result3)
+
+console.log("deduce gematria: " + findTotal(result) + " " + deduceRecurse(findTotal(result)))
+console.log("deduce pythagora: " + findTotal(result2) + " " + deduceRecurse(findTotal(result2)))
+console.log("deduce reduced pythagora: " + findTotal(result3) + " " + deduceRecurse(findTotal(result3)))
